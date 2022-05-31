@@ -1,0 +1,41 @@
+<h3>Edit Student Data</h3>
+
+
+<div class="form-group">
+    <label for="sid">Enter Student ID </label>
+    <input type="text" class="form-control" id="sid" ng-model="student.sid">
+</div>
+
+<div class="form-group">
+    <button type="submit" ng-click="findStudent()">Submit </button>
+</div>
+
+<div class="form-group">
+    <label for="first_name">First Name</label>
+    <input type="text" class="form-control" id="first_name" ng-model="student.first_name" readonly>
+
+</div>
+<div class="form-group">
+    <label for="last_name">Last Name</label>
+    <input type="text" class="form-control" id="last_name" ng-model="student.last_name" readonly>
+
+</div>
+<div class="form-group">
+    <label for="major">Major</label>
+    <input type="text" class="form-control" id="major" ng-model="student.major">
+
+</div>
+<div class="form-group">
+    <label for="midterm">Midterm Grade</label>
+    <input type="text" class="form-control" id="midterm" ng-model="student.midterm">
+
+</div>
+<div class="form-group">
+    <label for="final">Final Grade</label>
+    <input type="text" class="form-control" id="final" ng-model="student.final">
+
+</div>
+<div class="form-group">
+    <button type="submit" ng-click="updateRecord()">Submit </button>
+</div>
+<p>{{status}}</p> <!-- place to print status  -->
